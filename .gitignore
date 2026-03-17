@@ -1,0 +1,24 @@
+*.iml
+.gradle
+.idea
+.vscode
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/libs/
+/app/src/main/assets/sing-box
+/service_account_credentials.json
+/*.keystore
+/*.jks
+keystore.properties
+repository2-1.xml
+jniLibs/
+/library/libcore_build/
+.idea/deploymentTargetDropDown.xml
+/nkmr
+
+# submodules
+/external

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_pull_builtin_subscription"
+        android:icon="@drawable/ic_baseline_download_24"
+        android:title="@string/pull_subscription"
+        android:orderInCategory="0"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_update_all"
+        android:icon="@drawable/ic_baseline_update_24"
+        android:title="@string/update_all_subscription"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_new_group"
+        android:icon="@drawable/ic_av_playlist_add"
+        android:title="@string/group_create"
+        android:orderInCategory="2"
+        app:showAsAction="always" />
+</menu>
