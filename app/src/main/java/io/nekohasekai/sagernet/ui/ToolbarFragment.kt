@@ -18,10 +18,14 @@ open class ToolbarFragment : Fragment {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         toolbar = view.findViewById(R.id.toolbar)
-        toolbar.setNavigationIcon(R.drawable.ic_navigation_menu)
-        toolbar.setNavigationOnClickListener {
-            (activity as MainActivity).binding.drawerLayout.openDrawer(GravityCompat.START)
+        val act = activity as? MainActivity
+        if (act != null && act.binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            act.binding.drawerLayout.closeDrawers()
         }
+
+        // 底栏已覆盖主要导航，默认不显示左上角按钮
+        toolbar.navigationIcon = null
+        toolbar.setNavigationOnClickListener(null)
     }
 
     open fun onKeyDown(ketCode: Int, event: KeyEvent) = false
