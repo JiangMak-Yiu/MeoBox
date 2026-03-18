@@ -1,7 +1,7 @@
-# NekoBox for Android
+# MeoBox for Android
 
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Releases](https://img.shields.io/github/v/release/MatsuriDayo/NekoBoxForAndroid)](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases)
+[![Releases](https://img.shields.io/github/v/release/JiangMak-Yiu/MeoBox)](https://github.com/JiangMak-Yiu/MeoBox/releases)
 [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## 免责声明
@@ -12,9 +12,9 @@
 
 ## 下载 / Downloads
 
-[![GitHub All Releases](https://img.shields.io/github/downloads/Matsuridayo/NekoBoxForAndroid/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/starifly/NekoBoxForAndroid/releases)
+[![GitHub All Releases](https://img.shields.io/github/downloads/JiangMak-Yiu/MeoBox/total?label=downloads-total&logo=github&style=flat-square)](https://github.com/JiangMak-Yiu/MeoBox/releases)
 
-[GitHub Releases 下载](https://github.com/starifly/NekoBoxForAndroid/releases)
+[GitHub Releases 下载](https://github.com/JiangMak-Yiu/MeoBox/releases)
 
 **Google Play 版本自 2024 年 5 月起已被第三方控制，为非开源版本，请不要下载。**
 
@@ -27,7 +27,7 @@ https://t.me/Matsuridayo
 
 ## 项目主页 & 文档 / Homepage & Documents
 
-https://matsuridayo.github.io
+https://github.com/JiangMak-Yiu/MeoBox
 
 ## 支持的代理协议 / Supported Proxy Protocols
 
@@ -151,10 +151,9 @@ https://matsuridayo.github.io
 </code></pre>
 </details>
 
-请到[这里](https://matsuridayo.github.io/nb4a-plugin/)下载插件以获得完整的代理支持.
+请到[这里](https://github.com/JiangMak-Yiu/MeoBox)查看说明与插件相关信息。
 
-Please visit [here](https://matsuridayo.github.io/nb4a-plugin/) to download plugins for full proxy
-supports.
+Please visit [here](https://github.com/JiangMak-Yiu/MeoBox) for docs and plugin info.
 
 ## 支持的订阅格式 / Supported Subscription Format
 

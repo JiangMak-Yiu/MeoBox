@@ -83,7 +83,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .subText(SagerNet.appVersionNameForDisplay)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+                                        "https://github.com/JiangMak-Yiu/MeoBox/releases"
                                     )
                                 }
                                 .build())
@@ -115,7 +115,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .subText(R.string.donate_info)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://matsuridayo.github.io/index_docs/#donate"
+                                        "https://github.com/JiangMak-Yiu/MeoBox"
                                     )
                                 }
                                 .build())
@@ -183,8 +183,7 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                                 .text(R.string.github)
                                 .setOnClickAction {
                                     requireContext().launchCustomTab(
-                                        "https://github.com/MatsuriDayo/NekoBoxForAndroid"
-
+                                        "https://github.com/JiangMak-Yiu/MeoBox"
                                     )
                                 }
                                 .build())
@@ -220,9 +219,9 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                     }
                     val response = client.newRequest().apply {
                         if (checkPreview) {
-                            setURL("https://api.github.com/repos/starifly/NekoBoxForAndroid/releases/tags/preview")
+                            setURL("https://api.github.com/repos/JiangMak-Yiu/MeoBox/releases/tags/preview")
                         } else {
-                            setURL("https://api.github.com/repos/starifly/NekoBoxForAndroid/releases/latest")
+                            setURL("https://api.github.com/repos/JiangMak-Yiu/MeoBox/releases/latest")
                         }
                     }.execute()
                     val release = JSONObject(Util.getStringBox(response.contentString))

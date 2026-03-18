@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/menu">
+        <Preference
+            app:key="nav_route_entry"
+            app:icon="@drawable/ic_maps_directions"
+            app:title="@string/menu_route" />
+
+        <Preference
+            app:key="nav_tools_entry"
+            app:icon="@drawable/baseline_construction_24"
+            app:title="@string/menu_tools" />
+
+        <Preference
+            app:key="nav_log_entry"
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:title="@string/menu_log" />
+
+        <Preference
+            app:key="nav_dashboard_entry"
+            app:icon="@drawable/ic_baseline_transform_24"
+            app:title="@string/menu_dashboard" />
+
+        <Preference
+            app:key="nav_document_entry"
+            app:icon="@drawable/ic_device_data_usage"
+            app:title="@string/document" />
+
+        <Preference
+            app:key="nav_about_entry"
+            app:icon="@drawable/ic_baseline_info_24"
+            app:title="@string/menu_about" />
+    </PreferenceCategory>
+
     <PreferenceCategory app:title="@string/general_settings">
         <SwitchPreference
             app:defaultValue="false"
@@ -257,7 +290,7 @@
 
     <PreferenceCategory app:title="@string/cag_misc">
         <moe.matsuri.nb4a.ui.UrlTestPreference
-            app:defaultValue="http://www.gstatic.com/generate_204"
+            app:defaultValue="https://www.gstatic.com/generate_204"
             app:icon="@drawable/ic_baseline_cast_connected_24"
             app:key="connectionTestURL"
             app:title="@string/connection_test_url"
@@ -267,6 +300,56 @@
             app:key="enableClashAPI"
             app:summary="@string/enable_clash_api_summary"
             app:title="@string/enable_clash_api" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="autoReconnectOnFailure"
+            app:title="@string/auto_reconnect_on_failure" />
+
+        <EditTextPreference
+            app:defaultValue="5"
+            app:key="autoReconnectMaxAttempts"
+            app:title="@string/auto_reconnect_max_attempts"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="autoFailoverOnFailure"
+            app:title="@string/auto_failover_on_failure" />
+
+        <EditTextPreference
+            app:defaultValue="3"
+            app:key="autoFailoverMaxSwitches"
+            app:title="@string/auto_failover_max_switches"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            app:defaultValue="true"
+            app:key="autoReconnectOnNetworkChange"
+            app:title="@string/auto_reconnect_on_network_change" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            app:key="autoFailoverOnHighLatency"
+            app:title="@string/auto_failover_on_high_latency" />
+
+        <EditTextPreference
+            app:defaultValue="1500"
+            app:key="autoFailoverLatencyThreshold"
+            app:title="@string/auto_failover_latency_threshold"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="3"
+            app:key="autoFailoverLatencyConsecutive"
+            app:title="@string/auto_failover_latency_consecutive"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="10"
+            app:key="autoFailoverLatencyInterval"
+            app:title="@string/auto_failover_latency_interval"
+            app:useSimpleSummaryProvider="true" />
         <SwitchPreference
             app:defaultValue="true"
             app:icon="@drawable/ic_baseline_flip_camera_android_24"
@@ -293,6 +376,7 @@
             app:useSimpleSummaryProvider="true" />
         <SwitchPreference
             app:key="showBottomBar"
+            app:defaultValue="true"
             app:title="@string/show_bottom_bar" />
         <Preference
             app:icon="@drawable/baseline_undo_24"

@@ -45,6 +45,36 @@ class SettingsPreferenceFragment : PreferenceFragmentCompat() {
         DataStore.initGlobal()
         addPreferencesFromResource(R.xml.global_preferences)
 
+        findPreference<Preference>("nav_route_entry")?.setOnPreferenceClickListener {
+            (activity as? MainActivity)?.displayFragmentWithId(R.id.nav_route, true)
+            true
+        }
+
+        findPreference<Preference>("nav_tools_entry")?.setOnPreferenceClickListener {
+            (activity as? MainActivity)?.displayFragmentWithId(R.id.nav_tools, true)
+            true
+        }
+
+        findPreference<Preference>("nav_log_entry")?.setOnPreferenceClickListener {
+            (activity as? MainActivity)?.displayFragmentWithId(R.id.nav_logcat, true)
+            true
+        }
+
+        findPreference<Preference>("nav_dashboard_entry")?.setOnPreferenceClickListener {
+            (activity as? MainActivity)?.displayFragmentWithId(R.id.nav_traffic, true)
+            true
+        }
+
+        findPreference<Preference>("nav_document_entry")?.setOnPreferenceClickListener {
+            requireContext().launchCustomTab("https://github.com/JiangMak-Yiu/MeoBox")
+            true
+        }
+
+        findPreference<Preference>("nav_about_entry")?.setOnPreferenceClickListener {
+            (activity as? MainActivity)?.displayFragmentWithId(R.id.nav_about, true)
+            true
+        }
+
         val appTheme = findPreference<ColorPickerPreference>(Key.APP_THEME)!!
         appTheme.setOnPreferenceChangeListener { _, newTheme ->
             if (DataStore.serviceState.started) {
